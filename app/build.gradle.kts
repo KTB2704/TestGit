@@ -41,4 +41,33 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+
+    // =============================
+    // Retrofit
+    // =============================
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    // =============================
+    // OkHttp
+    // =============================
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
+
+    // =============================
+    // Dagger 2 (Java dùng annotationProcessor)
+    // =============================
+    implementation("com.google.dagger:dagger:2.51")
+    annotationProcessor("com.google.dagger:dagger-compiler:2.51")
+
+    implementation("com.google.dagger:dagger-android:2.51")
+    implementation("com.google.dagger:dagger-android-support:2.51")
+    annotationProcessor("com.google.dagger:dagger-android-processor:2.51")
+
+    // =============================
+    // ButterKnife (Java)
+    // =============================
+    implementation("com.jakewharton:butterknife:10.2.3")
+    annotationProcessor("com.jakewharton:butterknife-compiler:10.2.3")
 }
